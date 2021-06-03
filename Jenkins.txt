@@ -6,6 +6,10 @@ pipeline{
           
           BUILD_PIPELINE = "Declarative"
      }
+     
+     parameters{
+		string(name: 'buildVersion', defaultValue: '1.0.${BUILD_NUMBER}', description: '')
+     }
     
     
     stages{
@@ -16,6 +20,8 @@ pipeline{
                 //sh 'printenv'
                 
                 println "Env BUILD_PIPELINE: ${BUILD_PIPELINE}"
+                
+                println "Pramaeter buildVersion: ${buildVersion}"
                 
             }
         }
