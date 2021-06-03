@@ -13,8 +13,9 @@ pipeline{
             steps{
             
                 println "From Jenkins.txt"
-                sh 'printenv'
+                //sh 'printenv'
                 
+                println "Env BUILD_PIPELINE: ${BUILD_PIPELINE}"
                 
             }
         }
