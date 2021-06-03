@@ -3,6 +3,8 @@ pipeline{
     
     environment { 
           MY_ENV_VENKAT = 'clang'
+          
+          BUILD_PIPELINE = "Declarative"
      }
     
     
