@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    stages{
+        stage("Env example-1"){
+            steps{
+            
+                println "From Jenkins.txt"
+                sh 'printenv'
+                
+                
+            }
+        }
+    }
+}
