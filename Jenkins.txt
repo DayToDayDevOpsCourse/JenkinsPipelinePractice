@@ -8,7 +8,7 @@ pipeline{
      }
      
      parameters{
-		string(name: 'buildVersion', defaultValue: '1.0.${BUILD_NUMBER}', description: '')
+		string(name: 'buildVersion', defaultValue: "1.0.${BUILD_NUMBER}", description: '')
      }
     
     
@@ -21,7 +21,7 @@ pipeline{
                 
                 println "Env BUILD_PIPELINE: ${BUILD_PIPELINE}"
                 
-                println "Pramaeter buildVersion: ${buildVersion}"
+                println "Pramaeter buildVersion: ${params.buildVersion}"
                 
             }
         }
