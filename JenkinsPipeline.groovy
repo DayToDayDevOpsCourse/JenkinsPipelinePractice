@@ -5,7 +5,7 @@ pipeline {
     stages{
       stage("Jenkinsfile2"){
         steps{
-          println "I am from Jenkinsfile2"
+          println "I am from JenkinsPipeline.groovy file"
         }
       }
      }
