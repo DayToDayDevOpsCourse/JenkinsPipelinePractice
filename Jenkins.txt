@@ -1,5 +1,11 @@
 pipeline{
     agent any
+    
+    environment { 
+          MY_ENV_VENKAT = 'clang'
+     }
+    
+    
     stages{
         stage("Env example-1"){
             steps{
